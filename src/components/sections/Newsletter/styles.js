@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -30,7 +30,7 @@ export const InforRow = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;
 
@@ -57,7 +57,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: #1487C9;
+  color: #1487c9;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -71,7 +71,7 @@ export const Heading = styled.div`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? '#faf8fa' : '#010606')};
+  color: ${({ lightText }) => (lightText ? "#faf8fa" : "#010606")};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -83,7 +83,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
 export const BtnWrap = styled.div`
@@ -121,10 +121,28 @@ export const Input = styled.input`
   padding: 25px;
   box-sizing: border-box;
   border-radius: 4px;
-  border: 2px solid #1487C9;
+  border: 2px solid #1487c9;
   margin-bottom: 30px;
 
   &::placeholder {
     color: #999;
+  }
+`;
+
+export const OpenNews = styled.div`
+  padding: 30px 0;
+
+  a {
+    white-space: nowrap;
+    color: #fff;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    span {
+      display: block;
+      margin-right: 10px;
+    }
   }
 `;

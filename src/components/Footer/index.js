@@ -1,5 +1,5 @@
-import React from 'react';
-import { animateScroll as scroll } from 'react-scroll';
+import React from "react";
+import { animateScroll as scroll } from "react-scroll";
 
 import {
   FaFacebook,
@@ -7,7 +7,7 @@ import {
   FaLinkedin,
   FaTwitter,
   FaYoutube,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 import {
   FooterContainer,
@@ -23,7 +23,7 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
-} from './styles';
+} from "./styles";
 
 function Footer() {
   const toggleHome = () => {
@@ -33,7 +33,7 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterLinksContainer>
+        {/* <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About Us</FooterLinkTitle>
@@ -71,7 +71,7 @@ function Footer() {
               <FooterLink to="/signin">Twitter</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
-        </FooterLinksContainer>
+        </FooterLinksContainer> */}
 
         <SocialMedia>
           <SocialMediaWrap>

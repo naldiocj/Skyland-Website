@@ -1,5 +1,7 @@
-import React from 'react';
-import { Button } from '../../../styles/Button/styles';
+import React from "react";
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { Button } from "../../../styles/Button/styles";
 
 import {
   InfoContainer,
@@ -15,7 +17,8 @@ import {
   Img,
   InputWrap,
   Input,
-} from './styles';
+  OpenNews,
+} from "./styles";
 
 function Newsletter({
   id,
@@ -42,6 +45,11 @@ function Newsletter({
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
+                <OpenNews>
+                  <Link to="/newsletters">
+                    <span>Descubra as nossas novidades</span> <FaArrowRight />
+                  </Link>
+                </OpenNews>
                 <Heading lightText={lightText}>{heading}</Heading>
               </TextWrapper>
               <InputWrap>

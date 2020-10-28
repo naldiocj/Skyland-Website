@@ -1,10 +1,11 @@
-import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
+import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.div`
-  background: ${({ scrollNav }) => (scrollNav ? '#F7F7F7' : '#F7F7F7')};
-  border-bottom: ${({ scrollNav }) => (scrollNav ? '1px solid #1487C9' : '1px solid transparent')};
+  background: ${({ scrollNav }) => (scrollNav ? "#F7F7F7" : "#F7F7F7")};
+  border-bottom: ${({ scrollNav }) =>
+    scrollNav ? "1px solid #1487C9" : "1px solid transparent"};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -56,7 +57,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: #0b7bc0;
   }
 `;
 
@@ -86,7 +87,7 @@ export const NavLink = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #0B7BC0;
+    border-bottom: 3px solid #0b7bc0;
   }
 `;
 export const NavBtn = styled.nav`
@@ -100,7 +101,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: #1487C9;
+  background: #1487c9;
   white-space: nowrap;
   padding: 10px 22px;
   color: #010606;

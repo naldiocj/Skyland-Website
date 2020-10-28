@@ -1,5 +1,5 @@
-import React from 'react';
-import { Button } from '../../../styles/Button/styles';
+import React from "react";
+import { Button, Button2 } from "../../../styles/Button/styles";
 
 import {
   InfoContainer,
@@ -14,7 +14,7 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
-} from './styles';
+} from "./styles";
 
 function Info({
   id,
@@ -32,6 +32,7 @@ function Info({
   dark,
   link,
   buttonHide,
+  linkR,
 }) {
   return (
     <>
@@ -44,19 +45,30 @@ function Info({
                 <Heading lightText={lightText}>{heading}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button
-                    to={link}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    buttonHide={buttonHide ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
+                  {linkR ? (
+                    <Button2
+                      to={linkR}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                      buttonHide={buttonHide ? 1 : 0}
+                    >
+                      {buttonLabel}
+                    </Button2>
+                  ) : (
+                    <Button
+                      to={link}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      exact="true"
+                      offset={-80}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                      buttonHide={buttonHide ? 1 : 0}
+                    >
+                      {buttonLabel}
+                    </Button>
+                  )}
                 </BtnWrap>
               </TextWrapper>
             </Column1>

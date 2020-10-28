@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
-import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar';
-import Hero from '../../components/sections/Hero';
-import Info from '../../components/sections/Info';
-import Newsletter from '../../components/sections/Newsletter';
-import Services from '../../components/sections/Services';
-import Sidebar from '../../components/Sidebar';
+import React, { useState } from "react";
+import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
+import Hero from "../../components/sections/Hero";
+import Info from "../../components/sections/Info";
+import Newsletter from "../../components/sections/Newsletter";
+import Services from "../../components/sections/Services";
+import Sidebar from "../../components/Sidebar";
 import {
   homeSection1,
   homeSection2,
   homeSection3,
   homeSection4,
   homeSection5,
-} from '../../services/data';
+} from "../../services/data";
 
 function Home() {
-  const [isOpen, setIsOpen] = useState('');
+  const [isOpen, setIsOpen] = useState("");
 
   const toggle = () => {
     setIsOpen(!isOpen);
