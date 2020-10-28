@@ -10,9 +10,9 @@ import {
   NavMenu,
   NavItem,
   NavLink,
-  NavBtn,
-  NavBtnLink,
 } from './styles';
+
+import logo from '../../assets/images/logo.png'
 
 function Navbar({ toggle }) {
   const [scrollNav, setScrollNav] = useState(false);
@@ -39,7 +39,7 @@ function Navbar({ toggle }) {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              Skyland
+              <img src={logo} />
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />

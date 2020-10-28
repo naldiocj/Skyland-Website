@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: linear-gradient(180deg, #02844e 0%, #01bf71 100%);
+  background: linear-gradient(180deg, #02844e 0%, #1487C9 100%);
   height: 100vh;
 `;
 
@@ -59,7 +59,7 @@ export const FormInput = styled.input`
 export const FormButton = styled.div`
   width: 100%;
   box-sizing: border-box;
-  background: #01bf71;
+  background: #1487C9;
   padding: 18px;
   border-radius: 4px;
   text-align: center;
