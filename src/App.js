@@ -9,6 +9,7 @@ import Newsletters from "./pages/Newsletters";
 import SingleProject from "./pages/Projects/SingleProject";
 import SingleEvent from "./pages/Events/SingleEvent";
 import SingleNews from "./pages/Newsletters/SingleNews";
+import ProjectsByProject from "./pages/ProjectsByProject";
 
 function App() {
   return (
@@ -23,6 +24,11 @@ function App() {
           <Route exact path="/events/:id" component={SingleEvent} />
           <Route exact path="/newsletters" component={Newsletters} />
           <Route exact path="/newsletters/:id" component={SingleNews} />
+          <Route
+            exact
+            path="/provinces/:name/projects"
+            component={ProjectsByProject}
+          />
         </Switch>
       </Routes>
       <GlobalStyles />

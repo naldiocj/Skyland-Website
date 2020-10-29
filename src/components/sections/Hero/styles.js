@@ -1,105 +1,56 @@
-import styled from 'styled-components';
-import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
+import styled from "styled-components";
 
-export const HeroContainer = styled.div`
-  background: #0c0c0c;
-  display: flex;
-  justify-content: center;
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  padding: 0 30px;
-  height: 800px;
-  position: relative;
-  z-index: 1;
+  justify-content: space-evenly;
+  background: linear-gradient(110deg, #127ab6 50%, #014a73 50%);
+  /* background: linear-gradient(#014a73, #127ab6); */
+  padding: 40px;
 
-  :before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    z-index: 2;
-  }
-`;
+  .map {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
-export const HeroBg = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-`;
+    svg {
+      z-index: 1;
+      cursor: pointer;
+      width: 80%;
 
-export const VideoBg = styled.video`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #232a34;
-`;
+      & > path {
+        :hover {
+          fill: #014a73;
+        }
 
-export const HeroContent = styled.div`
-  z-index: 3;
-  max-width: 1200px;
-  position: absolute;
-  padding: 8px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+        z-index: 1;
+      }
+    }
 
-export const HeroH1 = styled.h1`
-  color: #fff;
-  font-size: 48px;
-  text-align: center;
+    text {
+      z-index: 19;
 
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
+      :hover {
+        fill: #fff;
+        color: #fff;
+      }
+    }
   }
 
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+  .info-hero {
+    h1 {
+      color: #fff;
+      font-size: 48px;
+      font-family: "Encode Sans Expanded", sans-serif;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 24px;
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+    }
   }
-`;
-
-export const HeroP = styled.p`
-  margin-top: 24px;
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-  max-width: 600px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
-  }
-`;
-
-export const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-export const ArrowForward = styled(MdArrowForward)`
-  margin-left: 8px;
-  font-size: 20px;
-`;
-
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-  margin-left: 8px;
-  font-size: 20px;
 `;
